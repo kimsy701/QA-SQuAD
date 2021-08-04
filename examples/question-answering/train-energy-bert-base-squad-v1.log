@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "run_squad.py", line 834, in <module>
+    main()
+  File "run_squad.py", line 683, in main
+    args.output_dir
+ValueError: Output directory (data/bert-base-uncased-squad-v1) already exists and is not empty. Use --overwrite_output_dir to overcome.
