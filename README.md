@@ -58,21 +58,21 @@ This model is case-insensitive: it does not make a difference between english an
   wget -O data/dev-v1.1.json  https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json
 
   python run_squad.py \
-    --model_type bert \
-    --model_name_or_path bert-base-uncased \
-    --do_train \
-    --do_eval \
-    --do_lower_case \
-    --train_file train-v1.1.json \
-    --predict_file dev-v1.1.json \
-    --per_gpu_train_batch_size 12 \
-    --per_gpu_eval_batch_size=16 \
-    --learning_rate 3e-5 \
-    --num_train_epochs 2.0 \
-    --max_seq_length 320 \
-    --doc_stride 128 \
-    --data_dir data \
-    --output_dir data/bert-base-uncased-squad-v1 2>&1 | tee train-energy-bert-base-squad-v1.log
+              --model_type bert \
+              --model_name_or_path bert-base-uncased \
+              --do_train \
+              --do_eval \
+              --do_lower_case \
+              --train_file train-v1.1.json \
+              --predict_file dev-v1.1.json \
+              --per_gpu_train_batch_size 12 \
+              --per_gpu_eval_batch_size 16 \
+              --learning_rate 3e-5 \
+              --num_train_epochs 2.0 \
+              --max_seq_length 320 \
+              --doc_stride 128 \
+              --data_dir data \
+              --output_dir data/bert-base-uncased-squad-v1 2>&1 | tee train-energy-bert-base-squad-v1.log
   ```
 
 It took about 2 hours to finish.
