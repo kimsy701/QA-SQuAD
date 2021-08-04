@@ -50,13 +50,6 @@ This model is case-insensitive: it does not make a difference between english an
   ```shell
   # after install https://github.com/huggingface/transformers
 
-  cd examples/question-answering
-  mkdir -p data
-
-  wget -O data/train-v1.1.json https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json
-
-  wget -O data/dev-v1.1.json  https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json
-
   python run_squad.py \
               --model_type bert \
               --model_name_or_path bert-base-uncased \
